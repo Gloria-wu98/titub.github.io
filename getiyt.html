@@ -1,0 +1,1050 @@
+{\rtf1\ansi\ansicpg950\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset136 PingFangTC-Regular;\f2\fnil\fcharset0 AppleColorEmoji;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12720\viewh7240\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="zh-TW">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>
+\f1 \'ac\'dd\'bc\'76\'a4\'f9\'be\'c7\'c2\'f9\'bb\'79\'a1\'5d\'a5\'78\'bb\'79\'a1\'41\'ad\'5e\'a4\'e5\'a1\'5e
+\f0 </title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">\
+    <style>\
+        body \{\
+            font-family: 'Noto Sans TC', sans-serif;\
+            background-color: #f0f9ff; /* 
+\f1 \'b2\'48\'c2\'c5\'a6\'e2\'ad\'49\'b4\'ba
+\f0  */\
+            color: #1e3a8a; /* 
+\f1 \'b2\'60\'c2\'c5\'a6\'e2\'a4\'e5\'a6\'72
+\f0  */\
+            display: flex;\
+            flex-direction: column;\
+            align-items: center;\
+            min-height: 100vh;\
+            margin: 0;\
+            padding: 20px;\
+        \}\
+        .container \{\
+            background-color: #ffffff;\
+            padding: 20px;\
+            border-radius: 12px;\
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);\
+            width: 100%;\
+            max-width: 700px;\
+            text-align: center;\
+        \}\
+        .header \{\
+            margin-bottom: 20px;\
+        \}\
+        .title \{\
+            font-size: 2.5rem; /* 
+\f1 \'bc\'d0\'c3\'44\'a6\'72\'c5\'e9\'a4\'6a\'a4\'70\'bc\'57\'a5\'5b
+\f0  */\
+            font-weight: 700;\
+            color: #172554; /* 
+\f1 \'a7\'f3\'b2\'60\'aa\'ba\'c2\'c5\'a6\'e2\'bc\'d0\'c3\'44
+\f0  */\
+            margin-bottom: 8px;\
+        \}\
+        .creator-info \{\
+            font-size: 0.9rem;\
+            color: #1e3a8a; /* 
+\f1 \'b2\'60\'c2\'c5\'a6\'e2\'a4\'e5\'a6\'72
+\f0  */\
+            margin-bottom: 12px;\
+            background-color: #e0f2fe; /* 
+\f1 \'b2\'48\'c2\'c5\'a6\'e2\'ad\'49\'b4\'ba\'a5\'48\'b1\'6a\'bd\'d5
+\f0  */\
+            padding: 5px 10px;\
+            border-radius: 6px;\
+            display: inline-block; /* 
+\f1 \'a8\'cf\'ad\'49\'b4\'ba\'b2\'c5\'a6\'58\'a4\'ba\'ae\'65\'a4\'6a\'a4\'70
+\f0  */\
+        \}\
+        .video-link \{\
+            font-size: 0.9rem;\
+            margin-bottom: 20px;\
+        \}\
+        .video-link a \{\
+            color: #2563eb;\
+            text-decoration: underline;\
+        \}\
+        .video-link a:hover \{\
+            color: #1d4ed8;\
+        \}\
+        .quiz-area, .results-area \{\
+            margin-top: 20px;\
+            padding: 15px;\
+            border: 1px solid #bfdbfe; /* 
+\f1 \'b8\'fb\'b2\'4c\'aa\'ba\'c2\'c5\'a6\'e2\'c3\'e4\'ae\'d8
+\f0  */\
+            border-radius: 8px;\
+            background-color: #eff6ff; /* 
+\f1 \'ab\'44\'b1\'60\'b2\'4c\'aa\'ba\'c2\'c5\'a6\'e2\'a5\'ce\'a9\'f3\'b4\'fa\'c5\'e7
+\f0 /
+\f1 \'b5\'b2\'aa\'47\'b0\'cf\'b0\'ec
+\f0  */\
+        \}\
+        .category-info-text \{\
+            font-size: 1.1rem;\
+            line-height: 1.6;\
+            color: #1e40af;\
+            text-align: center; /* 
+\f1 \'b1\'4e\'a4\'e5\'a6\'72\'b8\'6d\'a4\'a4
+\f0  */\
+            margin-bottom: 15px;\
+        \}\
+        .category-info-text p, .category-info-text ul \{\
+            margin-bottom: 10px;\
+        \}\
+        .category-info-text ul \{\
+            /* list-style-position: inside; */ /* 
+\f1 \'b2\'be\'b0\'a3\'a6\'b9\'a6\'e6\'a1\'41\'a7\'ef\'a5\'d1\'a4\'55\'a4\'e8
+\f0 ul style
+\f1 \'b1\'b1\'a8\'ee
+\f0  */\
+            padding-left: 0; /* 
+\f1 \'b2\'be\'b0\'a3\'b9\'77\'b3\'5d\'aa\'ba
+\f0 padding */\
+        \}\
+        .category-info-text li \{\
+            margin-bottom: 5px;\
+        \}\
+        .question-text \{\
+            font-size: 1.8rem; /* 
+\f1 \'c3\'44\'a5\'d8\'a4\'e5\'a6\'72\'a4\'6a\'a4\'70\'bc\'57\'a5\'5b
+\f0  */\
+            font-weight: 600;\
+            margin-bottom: 20px;\
+            color: #1e40af;\
+        \}\
+        .options-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(2, 1fr);\
+            gap: 15px; /* 
+\f1 \'bf\'ef\'b6\'b5\'b6\'a1\'b6\'5a\'bc\'57\'a5\'5b
+\f0  */\
+            margin-bottom: 20px;\
+        \}\
+        .option-card \{\
+            background-color: #3b82f6; /* 
+\f1 \'c2\'c5\'a6\'e2\'ab\'f6\'b6\'73
+\f0  */\
+            color: white;\
+            padding: 18px; /* 
+\f1 \'ab\'f6\'b6\'73\'a4\'ba\'c3\'e4\'b6\'5a\'bc\'57\'a5\'5b
+\f0  */\
+            border-radius: 8px;\
+            cursor: pointer;\
+            transition: all 0.3s ease;\
+            font-size: 1.1rem; /* 
+\f1 \'ab\'f6\'b6\'73\'a6\'72\'c5\'e9\'a4\'6a\'a4\'70\'bc\'57\'a5\'5b
+\f0  */\
+            border: none;\
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);\
+        \}\
+        .option-card:hover \{\
+            background-color: #2563eb;\
+            transform: translateY(-3px);\
+        \}\
+        .option-card.correct \{\
+            background-color: #16a34a !important; /* 
+\f1 \'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7\'ac\'b0\'ba\'f1\'a6\'e2
+\f0  */\
+            animation: pulseCorrect 0.5s;\
+        \}\
+        .option-card.incorrect \{\
+            background-color: #dc2626 !important; /* 
+\f1 \'bf\'f9\'bb\'7e\'b5\'aa\'ae\'d7\'ac\'b0\'ac\'f5\'a6\'e2
+\f0  */\
+            animation: shakeIncorrect 0.5s;\
+        \}\
+        .feedback-message \{\
+            margin-top: 15px;\
+            font-size: 1.1rem;\
+            font-weight: 500;\
+        \}\
+        .correct-feedback \{\
+            color: #16a34a;\
+        \}\
+        .incorrect-feedback \{\
+            color: #dc2626;\
+        \}\
+        .score-display \{\
+            font-size: 1.3rem;\
+            font-weight: 600;\
+            margin-top: 20px;\
+            color: #1e3a8a;\
+        \}\
+        .navigation-buttons button \{\
+            background-color: #60a5fa; /* 
+\f1 \'be\'c9\'af\'e8\'ab\'f6\'b6\'73\'a8\'cf\'a5\'ce\'b8\'fb\'b2\'4c\'aa\'ba\'c2\'c5\'a6\'e2
+\f0  */\
+            color: white;\
+            padding: 12px 25px;\
+            border: none;\
+            border-radius: 8px;\
+            cursor: pointer;\
+            font-size: 1.1rem;\
+            margin: 10px 5px 0;\
+            transition: background-color 0.3s ease;\
+        \}\
+        .navigation-buttons button:hover \{\
+            background-color: #3b82f6;\
+        \}\
+        .navigation-buttons button:disabled \{\
+            background-color: #9ca3af;\
+            cursor: not-allowed;\
+        \}\
+        .results-list \{\
+            list-style: none;\
+            padding: 0;\
+            text-align: left;\
+        \}\
+        .results-list li \{\
+            background-color: #e0f2fe; /* 
+\f1 \'a6\'43\'aa\'ed\'b6\'b5\'a5\'d8\'a8\'cf\'a5\'ce\'b3\'cc\'b2\'4c\'aa\'ba\'c2\'c5\'a6\'e2
+\f0  */\
+            padding: 10px;\
+            margin-bottom: 8px;\
+            border-radius: 6px;\
+            border-left: 5px solid #3b82f6;\
+        \}\
+        .results-list li.correct \{\
+             border-left-color: #16a34a;\
+        \}\
+         .results-list li.incorrect \{\
+             border-left-color: #dc2626;\
+        \}\
+        .final-score-summary \{\
+            font-size: 1.4rem;\
+            font-weight: bold;\
+            margin-top: 20px;\
+            padding: 15px;\
+            background-color: #dbeafe;\
+            border-radius: 8px;\
+        \}\
+\
+        @keyframes pulseCorrect \{\
+            0% \{ transform: scale(1); \}\
+            50% \{ transform: scale(1.1); \}\
+            100% \{ transform: scale(1); \}\
+        \}\
+\
+        @keyframes shakeIncorrect \{\
+            0%, 100% \{ transform: translateX(0); \}\
+            25% \{ transform: translateX(-5px); \}\
+            75% \{ transform: translateX(5px); \}\
+        \}\
+\
+        /* Mobile responsiveness */\
+        @media (max-width: 600px) \{\
+            .title \{\
+                font-size: 2rem;\
+            \}\
+            .question-text \{\
+                font-size: 1.5rem;\
+            \}\
+            .options-grid \{\
+                grid-template-columns: 1fr; /* 
+\f1 \'a4\'70\'bf\'c3\'b9\'f5\'bf\'ef\'b6\'b5\'b0\'ef\'c5\'7c
+\f0  */\
+            \}\
+            .option-card \{\
+                padding: 15px;\
+                font-size: 1rem;\
+            \}\
+            .creator-info \{\
+                font-size: 0.8rem; /* 
+\f1 \'bd\'d5\'be\'e3\'b3\'d0\'ab\'d8\'aa\'cc\'b8\'ea\'b0\'54\'a6\'62\'a4\'e2\'be\'f7\'a4\'57\'aa\'ba\'a6\'72\'c5\'e9\'a4\'6a\'a4\'70
+\f0  */\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <div class="container">\
+        <header class="header">\
+            <h1 class="title">
+\f1 \'ac\'dd\'bc\'76\'a4\'f9\'be\'c7\'c2\'f9\'bb\'79\'a1\'5d\'a5\'78\'bb\'79\'a1\'41\'ad\'5e\'a4\'e5\'a1\'5e
+\f0 </h1>\
+            <p class="creator-info">
+\f1 \'b9\'43\'c0\'b8\'b3\'d0\'ab\'d8\'a4\'48\'a1\'47
+\f0 Gloria
+\f1 \'a7\'64\'a8\'71\'c4\'f5\'a6\'d1\'ae\'76\'a1\'41
+\f0 Google
+\f1 \'bb\'7b\'c3\'d2\'c1\'bf\'ae\'76\'a1\'41\'a5\'78\'bb\'79\'bb\'7b\'c3\'d2\'b0\'aa\'af\'c5\'c3\'d2\'ae\'d1\'ad\'5e\'bb\'79\'b6\'a1\'a5\'78\'bb\'79\'b1\'d0\'ae\'76
+\f0 </p>\
+            <div class="video-link">\
+                
+\f1 \'b0\'d1\'a6\'d2\'bc\'76\'a4\'f9\'a1\'47
+\f0 <a href="https://youtu.be/PrF6aT8mi_c?si=SUJtXRbfiitB2kU1
+\f1 \'a1\'41
+\f0 " target="_blank" rel="noopener noreferrer">
+\f1 \'c2\'49\'a6\'b9\'c6\'5b\'ac\'dd\'bc\'76\'a4\'f9
+\f0 </a>\
+            </div>\
+        </header>\
+\
+        <div id="quiz-area" class="quiz-area">\
+            <div id="category-info" class="category-info-text">\
+                </div>\
+            <div id="question-container" style="display: none;">\
+                <p id="question-text" class="question-text"></p>\
+                <div id="options-grid" class="options-grid">\
+                    </div>\
+                <div id="feedback-message" class="feedback-message"></div>\
+            </div>\
+        </div>\
+\
+        <div id="score-display" class="score-display">
+\f1 \'a4\'c0\'bc\'c6\'a1\'47
+\f0 0</div>\
+\
+        <div class="navigation-buttons">\
+            <button id="start-quiz-btn">
+\f1 \'b6\'7d\'a9\'6c\'b4\'fa\'c5\'e7
+\f0 </button>\
+            <button id="next-question-btn" style="display: none;">
+\f1 \'a4\'55\'a4\'40\'c3\'44
+\f0 </button>\
+            <button id="show-cat1-results-btn" style="display: none;">
+\f1 \'ac\'64\'ac\'dd\'b2\'c4\'a4\'40\'c3\'fe\'b5\'b2\'aa\'47
+\f0 </button>\
+            <button id="start-cat2-btn" style="display: none;">
+\f1 \'b6\'7d\'a9\'6c\'b2\'c4\'a4\'47\'c3\'fe\'b4\'fa\'c5\'e7
+\f0 </button>\
+            <button id="show-final-results-btn" style="display: none;">
+\f1 \'ac\'64\'ac\'dd\'b3\'cc\'b2\'d7\'b5\'b2\'aa\'47
+\f0 </button>\
+            <button id="restart-quiz-btn" style="display: none;">
+\f1 \'ad\'ab\'b7\'73\'b6\'7d\'a9\'6c
+\f0 </button>\
+        </div>\
+\
+        <div id="results-area" class="results-area" style="display: none;">\
+            <h2 id="results-title" class="text-xl font-semibold mb-3">
+\f1 \'b4\'fa\'c5\'e7\'b5\'b2\'aa\'47
+\f0 </h2>\
+            <ul id="results-list" class="results-list">\
+                </ul>\
+            <div id="final-score-summary" class="final-score-summary" style="display:none;"></div>\
+        </div>\
+    </div>\
+\
+    <script>\
+        // --- 
+\f1 \'b5\'fc\'b7\'4a\'b8\'ea\'ae\'c6
+\f0  (
+\f1 \'b1\'71\'b3\'76\'a6\'72\'bd\'5a\'b4\'a3\'a8\'fa
+\f0 ) ---\
+        const userProvidedVocabulary = [\
+            \{ hanzi: "
+\f1 \'b7\'73\'bb\'44
+\f0 ", english: "news" \},\
+            \{ hanzi: "
+\f1 \'a8\'ae\'ba\'d7
+\f0 ", english: "traffic accident" \},\
+            \{ hanzi: "
+\f1 \'b0\'aa\'b6\'af
+\f0 ", english: "Kaohsiung" \},\
+            \{ hanzi: "
+\f1 \'ac\'64\'ae\'48\'a4\'48
+\f0 ", english: "man" \}, // 
+\f1 \'a5\'78\'bb\'79
+\f0 \
+            \{ hanzi: "
+\f1 \'bc\'af\'a6\'ab\'a8\'ae
+\f0 ", english: "scooter" \},\
+            \{ hanzi: "
+\f1 \'a4\'f4\'ba\'de
+\f0 ", english: "water pipe" \},\
+            \{ hanzi: "
+\f1 \'a5\'c1\'b2\'b3
+\f0 ", english: "citizens" \},\
+            \{ hanzi: "
+\f1 \'b6\'5b\'ad\'cb
+\f0 ", english: "fall down" \}, // 
+\f1 \'a5\'78\'bb\'79
+\f0 \
+            \{ hanzi: "
+\f1 \'b6\'ee\'b8\'f8
+\f0 ", english: "ground" \}, // 
+\f1 \'a5\'78\'bb\'79
+\f0 \
+            \{ hanzi: "
+\f1 \'b6\'cb\'b6\'d5
+\f0 ", english: "injuries" \},\
+            \{ hanzi: "
+\f1 \'c4\'b5\'a4\'e8
+\f0 ", english: "police" \},\
+            \{ hanzi: "
+\f1 \'b3\'57\'a9\'77
+\f0 ", english: "regulations" \},\
+            \{ hanzi: "
+\f1 \'aa\'ab\'a5\'f3
+\f0 ", english: "items" \}, // 
+\f1 \'a5\'78\'bb\'79
+\f0  'mi\uc0\u781 h-ki\u257 nn' 
+\f1 \'a5\'69\'ab\'fc
+\f0  
+\f1 \'aa\'ab\'ab\'7e
+\f0 /
+\f1 \'aa\'46\'a6\'e8
+\f0 \
+            \{ hanzi: "
+\f1 \'bb\'40
+\f0 ", english: "fined" \},\
+            \{ hanzi: "
+\f1 \'ba\'ca\'b5\'f8\'be\'b9
+\f0 ", english: "surveillance camera" \},\
+            \{ hanzi: "
+\f1 \'a6\'4d\'c0\'49
+\f0 ", english: "dangerous" \},\
+            \{ hanzi: "
+\f1 \'a6\'6e\'b7\'4e\'a4\'48
+\f0 ", english: "kindhearted people" \}, // 
+\f1 \'a5\'78\'bb\'79
+\f0 \
+            \{ hanzi: "
+\f1 \'b1\'cf\'a4\'48
+\f0 ", english: "help people" \},\
+            \{ hanzi: "
+\f1 \'b6\'ec\'bd\'a6
+\f0 ", english: "plastic" \},\
+            \{ hanzi: "
+\f1 \'b3\'66\'a8\'ae
+\f0 ", english: "truck" \},\
+            \{ hanzi: "
+\f1 \'a8\'ce\'ab\'76
+\f0 ", english: "fortunately" \}, // 
+\f1 \'a5\'78\'bb\'79
+\f0 \
+            \{ hanzi: "
+\f1 \'aa\'ec\'a8\'42\'bb\'7b\'a9\'77
+\f0 ", english: "initially determined" \},\
+            \{ hanzi: "
+\f1 \'a8\'cc\'aa\'6b
+\f0 ", english: "according to the law"\},\
+            \{ hanzi: "
+\f1 \'b0\'4c\'b7\'ed
+\f0 ", english: "cannot" \}, // 
+\f1 \'a5\'78\'bb\'79
+\f0 \
+            \{ hanzi: "
+\f1 \'b5\'f4\'b8\'fb\'b5\'75
+\f0 ", english: "cut shorter"\} // 
+\f1 \'a5\'78\'bb\'79
+\f0 \
+        ];\
+\
+        let vocabulary = [];\
+\
+        // --- 
+\f1 \'b9\'43\'c0\'b8\'aa\'ac\'ba\'41\'c5\'dc\'bc\'c6
+\f0  ---\
+        let currentCategory = 1; // 1 
+\f1 \'a5\'4e\'aa\'ed
+\f0  
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72
+\f0 ->
+\f1 \'ad\'5e\'a4\'e5
+\f0 , 2 
+\f1 \'a5\'4e\'aa\'ed
+\f0  
+\f1 \'ad\'5e\'a4\'e5
+\f0 ->
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72
+\f0 \
+        let currentQuestionIndex = 0;\
+        let score = 0;\
+        let category1Questions = [];\
+        let category2Questions = [];\
+        let userAnswersCategory1 = [];\
+        let userAnswersCategory2 = [];\
+\
+        // --- DOM 
+\f1 \'a4\'b8\'af\'c0
+\f0  ---\
+        const quizArea = document.getElementById('quiz-area');\
+        const categoryInfo = document.getElementById('category-info');\
+        const questionContainer = document.getElementById('question-container');\
+        const questionText = document.getElementById('question-text');\
+        const optionsGrid = document.getElementById('options-grid');\
+        const feedbackMessage = document.getElementById('feedback-message');\
+        const scoreDisplay = document.getElementById('score-display');\
+        const startQuizBtn = document.getElementById('start-quiz-btn');\
+        const nextQuestionBtn = document.getElementById('next-question-btn');\
+        const showCat1ResultsBtn = document.getElementById('show-cat1-results-btn');\
+        const startCat2Btn = document.getElementById('start-cat2-btn');\
+        const showFinalResultsBtn = document.getElementById('show-final-results-btn');\
+        const restartQuizBtn = document.getElementById('restart-quiz-btn');\
+        const resultsArea = document.getElementById('results-area');\
+        const resultsTitle = document.getElementById('results-title');\
+        const resultsList = document.getElementById('results-list');\
+        const finalScoreSummary = document.getElementById('final-score-summary');\
+\
+\
+        // --- 
+\f1 \'a4\'75\'a8\'e3\'a8\'e7\'bc\'c6
+\f0  ---\
+        function shuffleArray(array) \{\
+            // Fisher-Yates 
+\f1 \'ac\'7e\'b5\'50\'ba\'74\'ba\'e2\'aa\'6b
+\f0 \
+            for (let i = array.length - 1; i > 0; i--) \{\
+                const j = Math.floor(Math.random() * (i + 1));\
+                [array[i], array[j]] = [array[j], array[i]];\
+            \}\
+            return array;\
+        \}\
+\
+        function generateOptions(correctAnswer, type) \{\
+            // type: 'english' (
+\f1 \'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7\'ac\'4f\'ad\'5e\'a4\'e5\'a1\'41\'bf\'ef\'b6\'b5\'ac\'4f\'ad\'5e\'a4\'e5
+\f0 )\
+            // type: 'hanzi' (
+\f1 \'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7\'ac\'4f\'ba\'7e\'a6\'72\'a1\'41\'bf\'ef\'b6\'b5\'ac\'4f\'ba\'7e\'a6\'72
+\f0 )\
+            let options = [correctAnswer];\
+            const sourceArray = (type === 'english') ? vocabulary.map(v => v.english) : vocabulary.map(v => v.hanzi);\
+            \
+            // 
+\f1 \'b3\'d0\'ab\'d8\'a4\'40\'ad\'d3\'a4\'a3\'a5\'5d\'a7\'74\'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7\'aa\'ba\'a4\'7a\'c2\'5a\'b6\'b5\'bf\'ef\'b6\'b5\'a6\'c0
+\f0 \
+            let distractorPool = sourceArray.filter(item => item !== correctAnswer);\
+            shuffleArray(distractorPool); // 
+\f1 \'ac\'7e\'b5\'50\'a5\'48\'c0\'f2\'a8\'fa\'c0\'48\'be\'f7\'a4\'7a\'c2\'5a\'b6\'b5
+\f0 \
+\
+            // 
+\f1 \'b2\'4b\'a5\'5b\'a4\'7a\'c2\'5a\'b6\'b5\'aa\'bd\'a8\'ec\'bf\'ef\'b6\'b5\'b0\'7d\'a6\'43\'a6\'b3
+\f0 4
+\f1 \'ad\'d3\'b6\'b5\'a5\'d8
+\f0 \
+            for (let i = 0; i < distractorPool.length && options.length < 4; i++) \{\
+                if (!options.includes(distractorPool[i])) \{\
+                    options.push(distractorPool[i]);\
+                \}\
+            \}\
+            \
+            // 
+\f1 \'a6\'70\'aa\'47\'b0\'df\'a4\'40\'a4\'7a\'c2\'5a\'b6\'b5\'a4\'a3\'a8\'ac\'a1\'5d\'a8\'d2\'a6\'70\'b5\'fc\'b7\'4a\'b6\'71\'a4\'70\'a1\'5e\'a1\'41\'ab\'68\'a5\'ce\'a6\'fb\'a6\'ec\'b2\'c5\'b6\'f1\'a5\'52
+\f0 \
+            // 
+\f1 \'b3\'6f\'bd\'54\'ab\'4f\'c1\'60\'ac\'4f\'a6\'b3
+\f0 4
+\f1 \'ad\'d3\'bf\'ef\'b6\'b5\'a1\'43
+\f0 \
+            while (options.length < 4 && vocabulary.length > 0) \{\
+                 // 
+\f1 \'a6\'70\'aa\'47\'b5\'fc\'b7\'4a\'b6\'71\'a4\'d3\'a4\'70\'b5\'4c\'aa\'6b\'c0\'f2\'b1\'6f\'b0\'df\'a4\'40\'aa\'ba\'a4\'7a\'c2\'5a\'b6\'b5\'a1\'41\'ab\'68\'a8\'cf\'a5\'ce\'b3\'c6\'a5\'ce\'a4\'e8\'ae\'d7
+\f0 \
+                let dummyOption = (type === 'english') ? `Option $\{options.length + 1\}` : `
+\f1 \'bf\'ef\'b6\'b5
+\f0  $\{options.length + 1\}`;\
+                if (!options.includes(dummyOption)) \{\
+                    options.push(dummyOption);\
+                \} else \{ // 
+\f1 \'a6\'70\'aa\'47\'b3\'73\'b5\'ea\'c0\'c0\'bf\'ef\'b6\'b5\'b3\'a3\'ad\'ab\'bd\'c6\'a1\'41\'a8\'cf\'a8\'e4\'a7\'f3\'bf\'57\'af\'53
+\f0 \
+                    options.push(`$\{dummyOption\}*`);\
+                \}\
+            \}\
+            return shuffleArray(options);\
+        \}\
+\
+        // --- 
+\f1 \'ae\'d6\'a4\'df\'b9\'43\'c0\'b8\'c5\'de\'bf\'e8
+\f0  ---\
+        function setupQuiz() \{\
+            // 
+\f1 \'a8\'cf\'a5\'ce\'a5\'fe\'b0\'ec\'a9\'77\'b8\'71\'aa\'ba
+\f0  userProvidedVocabulary\
+            vocabulary = [...userProvidedVocabulary];\
+\
+            if (vocabulary.length < 4) \{\
+                categoryInfo.innerHTML = `<p>
+\f1 \'a9\'ea\'ba\'70\'a1\'41\'b5\'fc\'b7\'4a\'b6\'71\'a4\'a3\'a8\'ac\'a1\'41\'a6\'dc\'a4\'d6\'bb\'dd\'ad\'6e
+\f0 4
+\f1 \'b2\'d5\'b5\'fc\'b7\'4a\'a4\'7e\'af\'e0\'b6\'7d\'a9\'6c\'b4\'fa\'c5\'e7\'a1\'43\'bd\'d0\'b3\'d0\'ab\'d8\'aa\'cc\'b4\'a3\'a8\'d1\'a7\'f3\'a6\'68\'b5\'fc\'b7\'4a\'a1\'43
+\f0 </p>`;\
+                startQuizBtn.disabled = true;\
+                return;\
+            \}\
+            // 
+\f1 \'b3\'5d\'a9\'77\'b7\'73\'aa\'ba\'c5\'77\'aa\'ef\'b0\'54\'ae\'a7\'a1\'41\'a8\'c3\'b1\'4e\'ad\'ab\'c2\'49\'b3\'a1\'a4\'c0\'b3\'5d\'ac\'b0\'b2\'ca\'c5\'e9
+\f0 \
+            categoryInfo.innerHTML = `\
+                <p>
+\f1 \'c5\'77\'aa\'ef\'a8\'d3\'a8\'ec
+\f0 Gloria
+\f1 \'a6\'d1\'ae\'76
+\f0 \'ea
+\f1 \'a5\'78\'bb\'79\'cb\'cc\'ad\'5e\'a4\'e5
+\f0 \'ea
+\f1 \'a4\'ac\'b0\'ca\'be\'c7\'b2\'df\'b9\'43\'c0\'b8\'a1\'49
+\f0 </p>\
+                <div style="margin-top: 10px; margin-bottom: 10px;">\
+                    <p><strong>
+\f1 \'b3\'6f\'ad\'d3\'b9\'43\'c0\'b8\'a4\'c0\'ac\'b0\'a8\'e2\'ad\'d3\'b3\'a1\'a4\'c0\'a1\'47
+\f0 </strong></p>\
+                    <ul style="list-style-type: none; padding-left: 0;">\
+                        <li><strong>1. 
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72\'b0\'74\'b9\'ef\'ad\'5e\'a4\'e5\'c2\'bd\'c4\'b6\'a1\'5d\'b3\'cc\'a6\'68
+\f0 10
+\f1 \'c3\'44\'a1\'5e
+\f0 </strong></li>\
+                        <li><strong>2. 
+\f1 \'ad\'5e\'a4\'e5\'c2\'bd\'c4\'b6\'b0\'74\'b9\'ef\'a5\'78\'bb\'79\'ba\'7e\'a6\'72\'a1\'5d\'b3\'cc\'a6\'68
+\f0 10
+\f1 \'c3\'44\'a1\'5e
+\f0 </strong></li>\
+                    </ul>\
+                </div>\
+                <p>
+\f2 \uc0\u11088 
+\f1 \'b7\'7c\'a8\'cf\'b0\'d1\'a6\'d2\'b3\'bb\'c4\'61
+\f0 \'ea
+\f1 \'bc\'76\'a4\'f9\'b3\'73\'b8\'60\'a1\'43
+\f0 </p>\
+            `;\
+            startQuizBtn.disabled = false;\
+\
+            // 
+\f1 \'b7\'c7\'b3\'c6\'b2\'c4\'a4\'40\'c3\'fe\'b0\'dd\'c3\'44
+\f0  (
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72
+\f0  -> 
+\f1 \'ad\'5e\'a4\'e5
+\f0 )\
+            let shuffledVocab1 = shuffleArray([...vocabulary]);\
+            category1Questions = shuffledVocab1.slice(0, Math.min(10, shuffledVocab1.length)).map(item => \{\
+                return \{\
+                    question: item.hanzi,\
+                    correctAnswer: item.english,\
+                    options: generateOptions(item.english, 'english'),\
+                    type: 'hanziToEng'\
+                \};\
+            \});\
+\
+            // 
+\f1 \'b7\'c7\'b3\'c6\'b2\'c4\'a4\'47\'c3\'fe\'b0\'dd\'c3\'44
+\f0  (
+\f1 \'ad\'5e\'a4\'e5
+\f0  -> 
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72
+\f0 )\
+            let shuffledVocab2 = shuffleArray([...vocabulary]);\
+            category2Questions = shuffledVocab2.slice(0, Math.min(10, shuffledVocab2.length)).map(item => \{\
+                return \{\
+                    question: item.english,\
+                    correctAnswer: item.hanzi,\
+                    options: generateOptions(item.hanzi, 'hanzi'),\
+                    type: 'engToHanzi'\
+                \};\
+            \});\
+            userAnswersCategory1 = [];\
+            userAnswersCategory2 = [];\
+        \}\
+\
+\
+        function loadQuestion() \{\
+            feedbackMessage.textContent = '';\
+            optionsGrid.innerHTML = ''; // 
+\f1 \'b2\'4d\'b0\'a3\'a5\'fd\'ab\'65\'aa\'ba\'bf\'ef\'b6\'b5
+\f0 \
+            nextQuestionBtn.style.display = 'none'; // 
+\f1 \'a6\'5e\'b5\'aa\'ab\'65\'c1\'f4\'c2\'c3\'a4\'55\'a4\'40\'c3\'44\'ab\'f6\'b6\'73
+\f0 \
+\
+            const questions = (currentCategory === 1) ? category1Questions : category2Questions;\
+            if (currentQuestionIndex < questions.length) \{\
+                const q = questions[currentQuestionIndex];\
+                questionText.textContent = q.question;\
+                q.options.forEach(option => \{\
+                    const card = document.createElement('button');\
+                    card.classList.add('option-card');\
+                    card.textContent = option;\
+                    card.onclick = () => checkAnswer(option, q.correctAnswer, card);\
+                    card.disabled = false; // 
+\f1 \'bd\'54\'ab\'4f\'bf\'ef\'b6\'b5\'a4\'77\'b1\'d2\'a5\'ce
+\f0 \
+                    optionsGrid.appendChild(card);\
+                \});\
+                questionContainer.style.display = 'block';\
+                categoryInfo.style.display = 'none'; // 
+\f1 \'b4\'fa\'c5\'e7\'b4\'c1\'b6\'a1\'c1\'f4\'c2\'c3\'c5\'77\'aa\'ef\'b0\'54\'ae\'a7
+\f0 \
+            \} else \{\
+                // 
+\f1 \'a5\'d8\'ab\'65\'c3\'fe\'a7\'4f\'b5\'b2\'a7\'f4
+\f0 \
+                if (currentCategory === 1) \{\
+                    quizArea.style.display = 'block'; // 
+\f1 \'ab\'4f\'ab\'f9\'b4\'fa\'c5\'e7\'b0\'cf\'b0\'ec\'a5\'69\'a8\'a3
+\f0 \
+                    questionContainer.style.display = 'none';\
+                    feedbackMessage.textContent = '
+\f1 \'b2\'c4\'a4\'40\'c3\'fe\'b4\'fa\'c5\'e7\'a7\'b9\'a6\'a8\'a1\'49
+\f0 ';\
+                    feedbackMessage.className = 'feedback-message'; // 
+\f1 \'a4\'a4\'a9\'ca\'a6\'5e\'f5\'58\'c3\'43\'a6\'e2
+\f0 \
+                    showCat1ResultsBtn.style.display = 'inline-block';\
+                    nextQuestionBtn.style.display = 'none';\
+                \} else \{\
+                    quizArea.style.display = 'block'; // 
+\f1 \'ab\'4f\'ab\'f9\'b4\'fa\'c5\'e7\'b0\'cf\'b0\'ec\'a5\'69\'a8\'a3
+\f0 \
+                    questionContainer.style.display = 'none';\
+                    feedbackMessage.textContent = '
+\f1 \'b2\'c4\'a4\'47\'c3\'fe\'b4\'fa\'c5\'e7\'a7\'b9\'a6\'a8\'a1\'49
+\f0 ';\
+                    feedbackMessage.className = 'feedback-message';\
+                    showFinalResultsBtn.style.display = 'inline-block';\
+                    nextQuestionBtn.style.display = 'none';\
+                \}\
+            \}\
+        \}\
+\
+        function checkAnswer(selectedOption, correctAnswer, cardElement) \{\
+            document.querySelectorAll('.option-card').forEach(card => card.disabled = true); // 
+\f1 \'b8\'54\'a5\'ce\'a9\'d2\'a6\'b3\'bf\'ef\'b6\'b5
+\f0 \
+\
+            const q = (currentCategory === 1) ? category1Questions[currentQuestionIndex] : category2Questions[currentQuestionIndex];\
+            const userAnswer = \{\
+                question: q.question,\
+                selected: selectedOption,\
+                correct: correctAnswer,\
+                isCorrect: selectedOption === correctAnswer\
+            \};\
+            if (currentCategory === 1) \{\
+                userAnswersCategory1.push(userAnswer);\
+            \} else \{\
+                userAnswersCategory2.push(userAnswer);\
+            \}\
+\
+            if (selectedOption === correctAnswer) \{\
+                score++;\
+                feedbackMessage.textContent = '
+\f1 \'b5\'aa\'b9\'ef\'a4\'46\'a1\'49\'bc\'46\'ae\'60\'a1\'49
+\f0 ';\
+                feedbackMessage.className = 'feedback-message correct-feedback';\
+                cardElement.classList.add('correct');\
+            \} else \{\
+                feedbackMessage.textContent = `
+\f1 \'b5\'aa\'bf\'f9\'a4\'46\'a1\'41\'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7\'ac\'4f\'a1\'47
+\f0 $\{correctAnswer\}`;\
+                feedbackMessage.className = 'feedback-message incorrect-feedback';\
+                cardElement.classList.add('incorrect');\
+                document.querySelectorAll('.option-card').forEach(card => \{\
+                    if (card.textContent === correctAnswer) \{\
+                        card.classList.add('correct'); // 
+\f1 \'bc\'d0\'a5\'dc\'a5\'58\'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7
+\f0 \
+                    \}\
+                \});\
+            \}\
+            scoreDisplay.textContent = `
+\f1 \'a4\'c0\'bc\'c6\'a1\'47
+\f0 $\{score\}`;\
+            nextQuestionBtn.style.display = 'inline-block';\
+        \}\
+\
+        function handleNextQuestion() \{\
+            currentQuestionIndex++;\
+            const questions = (currentCategory === 1) ? category1Questions : category2Questions;\
+            if (currentQuestionIndex < questions.length) \{\
+                loadQuestion();\
+            \} else \{\
+                 // 
+\f1 \'a6\'b9\'c5\'de\'bf\'e8\'b2\'7b\'a6\'62\'a5\'d1
+\f0  loadQuestion 
+\f1 \'aa\'ba
+\f0  "else" 
+\f1 \'b0\'cf\'b6\'f4\'b3\'42\'b2\'7a
+\f0 \
+                if (currentCategory === 1) \{\
+                    questionContainer.style.display = 'none';\
+                    feedbackMessage.textContent = '
+\f1 \'b2\'c4\'a4\'40\'c3\'fe\'b4\'fa\'c5\'e7\'a7\'b9\'a6\'a8\'a1\'49
+\f0 ';\
+                    feedbackMessage.className = 'feedback-message';\
+                    nextQuestionBtn.style.display = 'none';\
+                    showCat1ResultsBtn.style.display = 'inline-block';\
+                \} else \{\
+                    questionContainer.style.display = 'none';\
+                    feedbackMessage.textContent = '
+\f1 \'a9\'d2\'a6\'b3\'b4\'fa\'c5\'e7\'a7\'b9\'a6\'a8\'a1\'49
+\f0 ';\
+                     feedbackMessage.className = 'feedback-message';\
+                    nextQuestionBtn.style.display = 'none';\
+                    showFinalResultsBtn.style.display = 'inline-block';\
+                \}\
+            \}\
+        \}\
+\
+        function displayCategory1Results() \{\
+            quizArea.style.display = 'none'; // 
+\f1 \'c1\'f4\'c2\'c3\'b4\'fa\'c5\'e7\'b0\'cf\'b0\'ec
+\f0 \
+            resultsArea.style.display = 'block'; // 
+\f1 \'c5\'e3\'a5\'dc\'b5\'b2\'aa\'47\'b0\'cf\'b0\'ec
+\f0 \
+            resultsTitle.textContent = '
+\f1 \'b2\'c4\'a4\'40\'c3\'fe\'b4\'fa\'c5\'e7\'b5\'b2\'aa\'47
+\f0  (
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72
+\f0  -> 
+\f1 \'ad\'5e\'a4\'e5
+\f0 )';\
+            resultsList.innerHTML = '';\
+\
+            category1Questions.forEach((q, index) => \{\
+                const userAnswer = userAnswersCategory1[index];\
+                const listItem = document.createElement('li');\
+                listItem.innerHTML = `<strong>
+\f1 \'c3\'44\'a5\'d8
+\f0  $\{index + 1\}:</strong> $\{q.question\} <br>\
+                                      <strong>
+\f1 \'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7
+\f0 :</strong> $\{q.correctAnswer\} <br>\
+                                      <strong>
+\f1 \'a7\'41\'aa\'ba\'b5\'aa\'ae\'d7
+\f0 :</strong> $\{userAnswer ? userAnswer.selected : '
+\f1 \'a5\'bc\'a7\'40\'b5\'aa
+\f0 '\} \
+                                      <span class="$\{userAnswer && userAnswer.isCorrect ? 'text-green-600 font-semibold' : 'text-red-600 font-semibold'\}">\
+                                        ($\{userAnswer && userAnswer.isCorrect ? "
+\f1 \'a5\'bf\'bd\'54
+\f0 " : "
+\f1 \'bf\'f9\'bb\'7e
+\f0 "\})\
+                                      </span>`;\
+                listItem.classList.add(userAnswer && userAnswer.isCorrect ? 'correct' : 'incorrect');\
+                resultsList.appendChild(listItem);\
+            \});\
+\
+            showCat1ResultsBtn.style.display = 'none';\
+            startCat2Btn.style.display = 'inline-block';\
+            restartQuizBtn.style.display = 'inline-block'; // 
+\f1 \'a4\'b9\'b3\'5c\'b1\'71\'a6\'b9\'b3\'42\'ad\'ab\'b7\'73\'b6\'7d\'a9\'6c
+\f0 \
+        \}\
+\
+        function startCategory2() \{\
+            currentCategory = 2;\
+            currentQuestionIndex = 0;\
+            // 
+\f1 \'a4\'c0\'bc\'c6\'c4\'7e\'c4\'f2\'b2\'d6\'ad\'70
+\f0 \
+            resultsArea.style.display = 'none'; // 
+\f1 \'c1\'f4\'c2\'c3\'b5\'b2\'aa\'47\'b0\'cf\'b0\'ec
+\f0 \
+            quizArea.style.display = 'block'; // 
+\f1 \'a6\'41\'a6\'b8\'c5\'e3\'a5\'dc\'b4\'fa\'c5\'e7\'b0\'cf\'b0\'ec
+\f0 \
+            categoryInfo.style.display = 'block'; // 
+\f1 \'c5\'e3\'a5\'dc\'c3\'fe\'a7\'4f\'b8\'ea\'b0\'54
+\f0 \
+            categoryInfo.innerHTML = '<p class="text-lg font-semibold">
+\f1 \'b2\'c4\'a4\'47\'c3\'fe\'b4\'fa\'c5\'e7\'a1\'47\'ad\'5e\'a4\'e5
+\f0  -> 
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72
+\f0 </p>'; // 
+\f1 \'b8\'fb\'c2\'b2\'bc\'e4\'aa\'ba\'b0\'54\'ae\'a7
+\f0 \
+            questionContainer.style.display = 'none'; // 
+\f1 \'a6\'62
+\f0  loadQuestion 
+\f1 \'ab\'65\'c1\'f4\'c2\'c3\'b0\'dd\'c3\'44\'ae\'65\'be\'b9
+\f0 \
+            feedbackMessage.textContent = '';\
+\
+            startCat2Btn.style.display = 'none';\
+            restartQuizBtn.style.display = 'none'; // 
+\f1 \'bc\'c8\'ae\'c9\'c1\'f4\'c2\'c3\'ad\'ab\'b7\'73\'b6\'7d\'a9\'6c\'ab\'f6\'b6\'73\'a1\'41\'aa\'bd\'a8\'ec\'b3\'cc\'b2\'d7\'b5\'b2\'aa\'47
+\f0 \
+\
+            if (category2Questions.length > 0) \{\
+                loadQuestion();\
+            \} else \{\
+                categoryInfo.innerHTML = '<p>
+\f1 \'a8\'53\'a6\'b3\'b2\'c4\'a4\'47\'c3\'fe\'b4\'fa\'c5\'e7\'aa\'ba\'c3\'44\'a5\'d8\'a1\'43\'bd\'d0\'c0\'cb\'ac\'64\'b5\'fc\'b7\'4a\'b6\'71\'a1\'43
+\f0 </p>';\
+                showFinalResultsBtn.style.display = 'inline-block';\
+            \}\
+        \}\
+\
+        function displayFinalResults() \{\
+            quizArea.style.display = 'none';\
+            resultsArea.style.display = 'block';\
+            resultsTitle.textContent = '
+\f1 \'b3\'cc\'b2\'d7\'b4\'fa\'c5\'e7\'b5\'b2\'aa\'47
+\f0 ';\
+            resultsList.innerHTML = '';\
+\
+            resultsList.innerHTML += '<h3 class="text-lg font-semibold mt-4 mb-2 text-blue-700">
+\f1 \'b2\'c4\'a4\'40\'c3\'fe\'b5\'b2\'aa\'47
+\f0  (
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72
+\f0  -> 
+\f1 \'ad\'5e\'a4\'e5
+\f0 )</h3>';\
+            userAnswersCategory1.forEach((userAnswer, index) => \{ // 
+\f1 \'ad\'a1\'a5\'4e\'b5\'aa\'ae\'d7\'a1\'41\'a6\'5d\'ac\'b0\'b0\'dd\'c3\'44\'a5\'69\'af\'e0\'a7\'f3\'a6\'68
+\f0 \
+                const q = category1Questions[index]; // 
+\f1 \'c0\'f2\'a8\'fa\'b9\'ef\'c0\'b3\'aa\'ba\'b0\'dd\'c3\'44
+\f0 \
+                const listItem = document.createElement('li');\
+                listItem.innerHTML = `<strong>
+\f1 \'c3\'44\'a5\'d8
+\f0 :</strong> $\{q.question\} <br>\
+                                      <strong>
+\f1 \'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7
+\f0 :</strong> $\{q.correctAnswer\} <br>\
+                                      <strong>
+\f1 \'a7\'41\'aa\'ba\'b5\'aa\'ae\'d7
+\f0 :</strong> $\{userAnswer.selected\} \
+                                      <span class="$\{userAnswer.isCorrect ? 'text-green-600 font-semibold' : 'text-red-600 font-semibold'\}">\
+                                        ($\{userAnswer.isCorrect ? "
+\f1 \'a5\'bf\'bd\'54
+\f0 " : "
+\f1 \'bf\'f9\'bb\'7e
+\f0 "\})\
+                                      </span>`;\
+                listItem.classList.add(userAnswer.isCorrect ? 'correct' : 'incorrect');\
+                resultsList.appendChild(listItem);\
+            \});\
+\
+            if (category2Questions.length > 0 && userAnswersCategory2.length > 0) \{\
+                resultsList.innerHTML += '<h3 class="text-lg font-semibold mt-4 mb-2 text-blue-700">
+\f1 \'b2\'c4\'a4\'47\'c3\'fe\'b5\'b2\'aa\'47
+\f0  (
+\f1 \'ad\'5e\'a4\'e5
+\f0  -> 
+\f1 \'a5\'78\'bb\'79\'ba\'7e\'a6\'72
+\f0 )</h3>';\
+                userAnswersCategory2.forEach((userAnswer, index) => \{\
+                    const q = category2Questions[index];\
+                    const listItem = document.createElement('li');\
+                    listItem.innerHTML = `<strong>
+\f1 \'c3\'44\'a5\'d8
+\f0 :</strong> $\{q.question\} <br>\
+                                        <strong>
+\f1 \'a5\'bf\'bd\'54\'b5\'aa\'ae\'d7
+\f0 :</strong> $\{q.correctAnswer\} <br>\
+                                        <strong>
+\f1 \'a7\'41\'aa\'ba\'b5\'aa\'ae\'d7
+\f0 :</strong> $\{userAnswer.selected\} \
+                                        <span class="$\{userAnswer.isCorrect ? 'text-green-600 font-semibold' : 'text-red-600 font-semibold'\}">\
+                                          ($\{userAnswer.isCorrect ? "
+\f1 \'a5\'bf\'bd\'54
+\f0 " : "
+\f1 \'bf\'f9\'bb\'7e
+\f0 "\})\
+                                        </span>`;\
+                    listItem.classList.add(userAnswer.isCorrect ? 'correct' : 'incorrect');\
+                    resultsList.appendChild(listItem);\
+                \});\
+            \}\
+\
+            const totalQuestions = category1Questions.length + (category2Questions.length > 0 ? category2Questions.length : 0);\
+            finalScoreSummary.innerHTML = `
+\f1 \'c1\'60\'a4\'c0
+\f0 : $\{score\} / $\{totalQuestions\}`;\
+            finalScoreSummary.style.display = 'block';\
+\
+            showFinalResultsBtn.style.display = 'none';\
+            startCat2Btn.style.display = 'none';\
+            restartQuizBtn.style.display = 'inline-block';\
+        \}\
+\
+\
+        function restartQuiz() \{\
+            currentCategory = 1;\
+            currentQuestionIndex = 0;\
+            score = 0;\
+            userAnswersCategory1 = [];\
+            userAnswersCategory2 = [];\
+\
+            scoreDisplay.textContent = `
+\f1 \'a4\'c0\'bc\'c6\'a1\'47
+\f0 0`;\
+            resultsArea.style.display = 'none';\
+            finalScoreSummary.style.display = 'none';\
+            quizArea.style.display = 'block';\
+            questionContainer.style.display = 'none';\
+            categoryInfo.style.display = 'block'; // 
+\f1 \'a6\'41\'a6\'b8\'c5\'e3\'a5\'dc\'c5\'77\'aa\'ef\'b0\'54\'ae\'a7\'b0\'cf\'b0\'ec
+\f0 \
+            feedbackMessage.textContent = '';\
+\
+\
+            startQuizBtn.style.display = 'inline-block';\
+            nextQuestionBtn.style.display = 'none';\
+            showCat1ResultsBtn.style.display = 'none';\
+            startCat2Btn.style.display = 'none';\
+            showFinalResultsBtn.style.display = 'none';\
+            restartQuizBtn.style.display = 'none';\
+\
+            setupQuiz(); // 
+\f1 \'b3\'6f\'b1\'4e\'ad\'ab\'b7\'73\'ac\'7e\'b5\'50\'a1\'42\'b7\'c7\'b3\'c6\'b0\'dd\'c3\'44\'a8\'c3\'b3\'5d\'a9\'77\'c5\'77\'aa\'ef\'b0\'54\'ae\'a7
+\f0 \
+        \}\
+\
+        // --- 
+\f1 \'a8\'c6\'a5\'f3\'ba\'ca\'c5\'a5\'be\'b9
+\f0  ---\
+        startQuizBtn.addEventListener('click', () => \{\
+            startQuizBtn.style.display = 'none';\
+            categoryInfo.style.display = 'block'; // 
+\f1 \'bd\'54\'ab\'4f\'a8\'e4\'a5\'69\'a8\'a3\'a1\'41\'b5\'4d\'ab\'e1\'a5\'d1
+\f0  loadQuestion 
+\f1 \'c1\'f4\'c2\'c3
+\f0 \
+            currentCategory = 1;\
+            currentQuestionIndex = 0;\
+            score = 0;\
+            scoreDisplay.textContent = `
+\f1 \'a4\'c0\'bc\'c6\'a1\'47
+\f0 0`;\
+            userAnswersCategory1 = []; // 
+\f1 \'b2\'4d\'b0\'a3\'a5\'fd\'ab\'65\'aa\'ba\'b5\'aa\'ae\'d7
+\f0 \
+            userAnswersCategory2 = []; // 
+\f1 \'b2\'4d\'b0\'a3\'a5\'fd\'ab\'65\'aa\'ba\'b5\'aa\'ae\'d7
+\f0 \
+            loadQuestion();\
+        \});\
+        nextQuestionBtn.addEventListener('click', handleNextQuestion);\
+        showCat1ResultsBtn.addEventListener('click', displayCategory1Results);\
+        startCat2Btn.addEventListener('click', startCategory2);\
+        showFinalResultsBtn.addEventListener('click', displayFinalResults);\
+        restartQuizBtn.addEventListener('click', restartQuiz);\
+\
+        // --- 
+\f1 \'aa\'ec\'a9\'6c\'b3\'5d\'a9\'77
+\f0  ---\
+        // 
+\f1 \'ad\'b6\'ad\'b1\'b8\'fc\'a4\'4a\'ae\'c9\'a9\'49\'a5\'73
+\f0  setupQuiz 
+\f1 \'a5\'48\'b7\'c7\'b3\'c6\'b5\'fc\'b7\'4a\'a9\'4d\'c5\'77\'aa\'ef\'b0\'54\'ae\'a7
+\f0 \
+        window.onload = setupQuiz;\
+\
+    </script>\
+</body>\
+</html>\
+}
